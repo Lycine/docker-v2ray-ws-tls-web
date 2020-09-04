@@ -13,16 +13,16 @@ Docker Compose solution: v2ray + Caddy + openntpd.
 
 ```
 # 下载官方repo
-curl https://download.docker.com/linux/centos/docker-ce.repo -o /etc/yum.repos.d/docker-ce.repo
+sudo curl https://download.docker.com/linux/centos/docker-ce.repo -o /etc/yum.repos.d/docker-ce.repo
 
 # 下载依赖
-yum install https://download.docker.com/linux/fedora/30/x86_64/stable/Packages/containerd.io-1.2.6-3.3.fc30.x86_64.rpm
+sudo yum install https://download.docker.com/linux/fedora/30/x86_64/stable/Packages/containerd.io-1.2.6-3.3.fc30.x86_64.rpm
 
 # 安装
-yum install docker-ce
+sudo yum install docker-ce
 
 # 开机启动
-systemctl start docker
+sudo systemctl start docker
 ```
 
 ### 安装 docker-compose
@@ -38,10 +38,10 @@ sudo yum install -y python3-pip
 sudo pip3 install docker-compose --default-timeout=100
 
 # 查看版本
-pip3 -V
+sudo pip3 -V
 
 # 查看版本
-docker-compose -version
+sudo docker-compose -version
 ```
 
 ## 使用方法
